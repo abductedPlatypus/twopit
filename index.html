@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-97702601-3"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-97702601-3');
+	</script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./favicon.ico">
+
+    <title>Sum of Best Ratio</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <header class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">Twop.it</h3>
+              <nav class="nav nav-masthead">
+                <a class="nav-link active" href="http://sob.twop.it">Home</a>
+              </nav>
+            </div>
+          </header>
+          <div id="home" class="d-none">
+          <main role="main" class="inner cover">
+            <h1 class="cover-heading">Sum of Best Ratio</h1>
+            <p class="lead">This page is the easiest way to quickly get and share your Sum of Best Ratio, and show how much better you are than all the other speedrunners.* </p>
+            <p class="font-weight-light" style="opacity: 0.05">*It's impossibru to compare different games and categories, but it might motivate you. </p>
+
+            <form id="sobratio-form" style="text-align: left" action="http://sob.twop.it/index.html" method="get">
+			  <div class="form-row">
+			  <div class="form-group col-md-6" >
+			    <label for="pb">Your PB</label>
+			    <input type="text" class="form-control" name="pb" id="pb" placeholder="05:40:03.21 or 5h 4m 3s 210ms">
+			  </div>
+			  <div class="form-group col-md-6">
+			    <label for="sob">Best SoB You Can Find</label>
+			    <input type="text" class="form-control" name="sob" id="sob" placeholder="04:30:02.01 or 4h 3m 2s 100ms">
+			  </div>
+			  </div>
+			    <div class="form-row">
+				  <div class="form-group col-md-6">
+				    <label for="name">Your Name (optional)</label>
+				    <input type="text" class="form-control is-valid" name="name" id="name" placeholder="abductedPlatypus">
+				  </div>
+				  <div class="form-group col-md-6">
+				    <label for="sobname">SoB Holder Name (optional)</label>
+				    <input type="text" class="form-control is-valid" name="sobname" id="sobname" placeholder="Smaugy">
+				  </div>
+				</div>
+			  <button type="submit" id="go" class="btn btn-primary" tar>Go!</button>
+			</form>
+          </main> 
+          </div>
+
+          <div id="score" class="d-none">
+          	<main>
+	            <p class="lead d-none" id="noname">You are</p>
+	            <p class="lead d-none" id="yesname"><span id="sobNameDisplay">??????</span> is</p>
+	            <h1 class="cover-heading" id="ratioDisplay">??.????%</h1>
+	            <p class="lead">Mr.Destructoid</p>
+
+	            <p id="tryharder" class="d-none" style="opacity: 0.1">Try harder next time!</p>
+	            <p id="reported" class="d-none" style="opacity: 0.1">reported.</p>
+	            <p class="font-weight-light">PB: <span id="pbDisplay">??h??m??s??ms</span> <span id="pbNameDisplayBrackets">(?????)</span> <br> SoB: <span id="sobDisplay">??h??m??s??ms</span> <span id="sobNameDisplayBrackets">(?????)</span> </p>
+	            <div id="twitterArea"></div>
+
+            </main>
+          </div>
+
+          <footer class="mastfoot">
+            <div class="inner">
+              <p>A quick, potentially buggy web-app made by <a href="https://twitter.com/abductypus">@abductypus</a> to celebrate <a href="https://twitter.com/smaugy">@smaugy</a>'s <a href="https://youtu.be/C8RSv_V6ebw"> insane Shovel Knight Any% World Record</a>. Theme by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+            </div>
+          </footer>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
+	<script src="./script.js"> </script>
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </body>
+</html>
+
